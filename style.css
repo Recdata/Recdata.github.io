@@ -1,0 +1,143 @@
+body {
+    /* Fallback if the animated canvas background won't work for whatever reason */
+    background-color: black;
+    margin:0;
+    color:white;
+    font-family:"Roboto Mono", sans-serif;
+}
+
+/* ---- Background ---- */
+.whole-page {
+    height:99%;
+    width: 100%;
+    position: fixed;
+    top: 0; left: 0; border: 0; margin: 0; padding: 0;
+    z-index: -10;
+    overflow: hidden;
+}
+
+#background {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* ---- Element Styling ---- */
+h1 {
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    border:0;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+h1>div {
+    font-size: 10vw;
+    text-align: center;
+    font-family:"Roboto Mono", sans-serif;
+    font-weight:normal;
+    color: #fff;
+    filter: blur(0px);
+}
+h1>div:hover {
+    filter: blur(10px);
+}
+
+a {
+    color: #FFF;
+}
+a:hover {
+    color: #FFF;
+    filter: blur(2px);
+}
+
+figure {
+    width: 100%;
+    max-width: 500px;
+}
+
+figure img, iframe, video {
+    display: block;
+    width: 100%;
+}
+
+audio {
+    width: 100%;
+    height: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left:0;
+}
+
+nav ul>li {
+    display:inline;
+}
+
+nav ul>li::after {
+    content: " // "
+}
+
+/* ---- LAYOUT BY SCREEN SIZE ---- */
+/* narrow screens */
+@media(max-width: 900px) {
+    section {
+        width: 100%;
+    }
+
+    section div {
+        max-width: 500px;
+        margin-left:auto;
+        margin-right:auto;
+        border-top:1px solid #FFF;
+    }
+
+    figure {
+        margin-left:auto;
+        margin-right:auto;
+    }
+    header, main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* wide screens */
+@media(min-width: 901px) {
+    header, main {
+        max-width:1400px;
+        margin-left:auto;
+        margin-right:auto;
+        padding-left:8%;
+        padding-right:8%;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: auto 500px;
+        grid-column-gap: 20px;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    main {
+        padding-top:20px;
+    }
+}
+
+/* ---- FONTS BY SCREEN SIZE ---- */
+/* Very narrow screens */
+@media (max-width: 479px) {
+    body {
+        font-size: 0.7em;
+    }
+}
+
+/* quite narrow screens */
+@media (min-width: 480px) and (max-width: 800px) {
+    body {
+        font-size: 0.85em;
+    }
+}

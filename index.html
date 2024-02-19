@@ -1,0 +1,385 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vitling</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="vitling" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.vitling.xyz/" />
+    <meta property="og:description" content="Music producer, visual artist, programmer and DJ" />
+    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="shortcut icon" type="image/png" href="images/icon.png">
+    <script src="bg.js?v=2"></script>
+</head>
+<body>
+    <div class="whole-page"><canvas id="background"></canvas></div>
+    <div style="background-color: red;color: white;">
+        <div style="font-size:24pt;text-align:center;">STOP THE GENOCIDE</div>
+        <div style="font-size:16pt;text-align:center;">DEMAND A CEASEFIRE NOW</div>
+        <div style="font-size:16pt;text-align:center;">
+            <a href="https://voicesineuropeforpeace.org/">EU/UK</a>
+            <a href="https://www.jewishvoiceforpeace.org/resource/email-congress-to-stop-fueling-violence/">US</a>
+            <a href="https://www.nccm.ca/ceasefire/">Canada</a>
+        </div>
+    </div>
+    <header>
+        <h1>
+            <div>A</div><div>M</div><div>A</div><div>N</div>
+        </h1>
+        <p>RecDaata (Aman) is a Software Programmer, Learner, Healer and Curious</p>
+        <nav class="ext">
+            <ul>
+                <li>i.am@thewit.ch</li>
+                <li><a href="https://www.linkedin.com/in/amannadeem/">linkedin: @amannadeem</a></li>
+                <li><a href="https://twitter.com/amannadeem78">twitter: @amannadeem</a></li>
+                <li><a href="https://independent.academia.edu/amanadeem">academia.edu: @amanadeem</a></li>
+                <li><a href="https://github.com/recdata">github: @recdata</a></li>
+            </ul>
+        </nav>
+    </header>
+<!--     
+    <main>
+        <section>
+            <div>
+                <h3>Cadence (2024)</h3>
+                <p>12-track seamless loopable album at multiple tempos, digital</p>
+                <p>
+                    <a href="cadence">More info</a>
+                </p>
+            </div>
+            <figure>
+                <img src="cadence/cover_1k.jpg">
+            </figure>
+        </section>
+        <section>
+            <div>
+                <h3>I Need To Grow Away From These Roots (2023)</h3>
+                <p>Generative audio-visual ambient light sculpture</p>
+                <p>WS2812B / Arduino / Raspberry Pi / C++
+                <p><a href="i-need-to-grow-away-from-these-roots">More info</a></p>
+            </div>
+            <figure>
+                <div><video src="videos/roots_clip_sm.mp4" autoplay muted controls loop></video></div>
+            </figure>
+        </section>
+        <section>
+            <div>
+                <h3>Organic Mechanics (2023)</h3>
+                <p>5-track EP, digital</p>
+                <p>
+                    <a href="https://music.vitling.xyz/album/organic-mechanics">Bandcamp</a> |
+                    <a href="https://open.spotify.com/album/6vhBDiswYOGB9WwAUs0MzP?si=p7U_m_hzQmWsg7xWFYRFWg">Spotify</a>
+                </p>
+            </div>
+            <figure>
+                <iframe style="border: 0; height: 274px;" src="https://bandcamp.com/EmbeddedPlayer/album=154940251/size=large/bgcol=333333/linkcol=0f91ff/artwork=small/transparent=true/" seamless><a href="https://music.vitling.xyz/album/organic-mechanics">Organic Mechanics by Vitling</a></iframe>
+            </figure>
+        </section>
+        <section>
+            <div>
+                <h3>Welcome to Tech Talk (2023)</h3>
+                <p>Generative audio installation</p>
+                <p>Created as part of an AI-themed artist residency program at <a href="https://konventzero.com/Residence">Konvent</a> in Cal Rosal, Catalonia</p>
+                <p><a href="welcome-to-tech-talk">More info</a></p>
+            </div>
+            <figure>
+                <div><img src="welcome-to-tech-talk/installation_setup.jpg" alt="Photograph of the installation, a room full of old furniture including 2 old radios and a screen showing text"></div>
+                <iframe src="https://player.vimeo.com/video/842823255?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="500" height="348" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Screen Recording 2023-07-06 at 13.06.24"></iframe>
+            </figure>
+        </section>
+        <section>
+            <div>
+                <h3>Silly Little Edits for Silly Little Raves (2023)</h3>
+                <p>5-track remix EP, digital</p>
+                <p>
+                    <a href="https://music.vitling.xyz/album/silly-little-edits-for-silly-little-raves">Bandcamp</a> |
+                    <a href="https://soundcloud.com/vitling/sets/silly-little-edits-for-silly-little-raves">SoundCloud</a>
+                </p>
+                <p>Cover art by <a href="https://www.instagram.com/jude.grolfe">@jude.grolfe</a></p>
+            </div>
+            <figure>
+                <iframe style="border: 0; height: 274px;" src="https://bandcamp.com/EmbeddedPlayer/album=1461343845/size=large/bgcol=333333/linkcol=0f91ff/artwork=small/transparent=true/" seamless><a href="https://music.vitling.xyz/album/silly-little-edits-for-silly-little-raves">Silly Little Edits for Silly Little Raves by Vitling</a></iframe>
+            </figure>
+        </section>
+        <section>
+            <div>
+                <h3>Swarm (2023)</h3>
+                <p>Algorithmic audiovisual work</p>
+                <p>Typescript, WebAudio, Canvas</p>
+                <p><a href="toys/swarm">Play</a></p>
+            </div>
+            <figure>
+                <img src="toys/swarm/preview.png" alt="Screenshot of Swarm">
+            </figure>
+        </section>
+        <section>
+            <div>
+                <h3>Auxiliary Components (2021)</h3>
+                <p>4-track EP, digital</p>
+                <p>
+                    <a href="https://vitling.bandcamp.com/album/auxiliary-components">Bandcamp</a> |
+                    <a href="https://open.spotify.com/album/6DXtoudMLfd6KpgjuSrmqw?si=oMP985lKTMCfT83AYD2ReQ">Spotify</a>
+                </p>
+            </div>
+            <figure>
+                <iframe style="border: 0; height: 274px;" src="https://bandcamp.com/EmbeddedPlayer/album=1305445720/size=large/bgcol=333333/linkcol=0f91ff/artwork=small/transparent=true/" seamless><a href="https://vitling.bandcamp.com/album/auxiliary-components">Auxiliary Components by Vitling</a></iframe>
+            </figure>
+        </section>
+        <section>
+            <div>
+                <h3>Spaceport Lounge Music EP (2021)</h3>
+                <p>4-track EP, digital</p>
+                <p>+ 3d-animated music video</p>
+                <p>Released by Berlin-based <a href="https://edgenetwork.bandcamp.com">Edge Network</a> label</p>
+                <p>
+                    <a href="https://edgenetwork.bandcamp.com/album/edge001-spaceport-lounge-music">Bandcamp</a> |
+                    <a href="https://open.spotify.com/album/7hUqvia7zr4sHeEoOWcA3u?si=eF_SQLgyTIajLm0Ar0dQjw">Spotify</a> |
+                    <a href="https://www.youtube.com/watch?v=Pua1BjArlNU">YouTube</a>
+                </p>
+            </div>
+            <figure>
+                <iframe width="500" height="315" src="https://www.youtube-nocookie.com/embed/Pua1BjArlNU" frameborder="0" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>
+                <iframe style="border: 0; height: 274px;" src="https://bandcamp.com/EmbeddedPlayer/album=2872599835/size=large/bgcol=333333/linkcol=0f91ff/artwork=small/transparent=true/" seamless><a href="https://edgenetwork.bandcamp.com/album/edge001-spaceport-lounge-music">Spaceport Lounge Music by Vitling</a></iframe>
+            </figure>
+        </section>
+        <section>
+            <div>
+                <h3>The Endless Acid Banger (2021)</h3>
+                <p>Interactive human-algorithm collaborative jam experience</p>
+                <p>Typescript, WebAudio</p>
+                <p><a href="toys/acid-banger">Play</a></p>
+            </div>
+            <figure>
+                <img src="toys/acid-banger/preview.png" alt="Screenshot of The Endless Acid Banger">
+            </figure>
+        </section>
+        <section>
+            <div>
+                <h3>Landing Pads (2021)</h3>
+                <p>Infinite algorithmic audiovisal composition</p>
+                <p>Typescript, WebAudio, Canvas</p>
+                <p><a href="toys/landing-pads">Play</a></p>
+            </div>
+            <figure>
+                <img src="toys/landing-pads/preview.jpg" alt="Screenshot of Landing Pads work">
+            </figure>
+        </section>
+        <section>
+            <div>
+                <h3>Trans-Portal Loop Sequence (2021)</h3>
+                <p>3d animation with original music, looped</p>
+                <p>Blender, Davinci Resolve, Ableton Live</p>
+                <p><a href="https://www.youtube.com/watch?v=3o9RZB-gEhY">YouTube</a> | <a href="https://www.youtube.com/watch?v=3o9RZB-gEhY">Vimeo</a></p>
+            </div>
+            <figure>
+                <iframe width="500" height="315" src="https://www.youtube-nocookie.com/embed/3o9RZB-gEhY" frameborder="0" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>
+            </figure>
+        </section>
+        <section>
+            <div>
+                <h3>Particles (2021)</h3>
+                <p>Experimental particle-collision simulation synthesiser</p>
+                <p>Plug-in instrument version of Gas, see below</p>
+                <p>VST3/AU written in C++, Open Source (GPL3)</p>
+                <p><a href="plugins">Plug-ins page</a> with more info and download</p>
+            </div>
+            <figure>
+                <img src="plugins/media/particles.png" alt="Screenshot of particles plugin">
+            </figure>
+        </section>
+        <section>
+            <div>
+                <h3>Long Walks and Tough Talks (2021)</h3>
+                <p>3-track EP, digital</p>
+                <p><a href="long-walks/">More info</a></p>
+                <p><a href="https://music.vitling.xyz/album/long-walks-and-tough-talks">Download on Bandcamp</a> // <a href="https://open.spotify.com/album/6JHcSQWpI23aYiV4fmsFcT?si=l3oLmDHmQ1WoPllveLO3vw">Play on Spotify</a></p>
+            </div>
+            <figure>
+                <iframe style="border: 0; height: 274px;" src="https://bandcamp.com/EmbeddedPlayer/album=1671810721/size=large/bgcol=333333/linkcol=0f91ff/artwork=small/transparent=true/" seamless><a href="https://music.vitling.xyz/album/long-walks-and-tough-talks">Long Walks and Tough Talks by Vitling</a></iframe>
+            </figure>
+        </section>
+        <section>
+            <div>
+                <h3>Gas (2020)</h3>
+                <p>Particle simulation synthesiser</p>
+                <p>js/Canvas/WebAudio</p>
+                <p><a href="toys/gas">Play</a></p>
+            </div>
+            <figure>
+                <img src="toys/gas/preview.png" alt="Screenshot of Gas simluation synthesiser">
+            </figure>
+        </section>
+        <section>
+            <div>
+                <h3>Lockdown Light (2020)</h3>
+                <p>Photo series, ongoing</p>
+                <p><a href="lockdown-light">View Gallery</a></p>
+            </div>
+            <figure>
+                <img src="lockdown-light/jpg/P1030683.jpg" alt="Artistic photograph of a pedestrian overpass with light entering from the windows on the right hand side">
+            </figure>
+        </section>
+        <section>
+            <div>
+                <h3>Crypt (2020)</h3>
+                <p>Hyper-unison synthesiser plugin</p>
+                <p>VST3/AU written in C++, Open Source (GPL3)</p>
+                <p><a href="plugins">Plug-ins page</a> with more info and download</p>
+            </div>
+            <figure>
+                <img src="images/crypt.jpg">
+            </figure>
+        </section>
+        <section>
+            <div>
+                <h3>Autotracker (2020)</h3>
+                <p>Infinite algorithmic tracker-style chiptune composition, Typescript / WebAudio</p>
+                <p><a href="toys/autotracker">Play</a></p>
+            </div>
+            <figure>
+                <img src="toys/autotracker/preview.png" alt="Screenshot of the Autotracker algorithmic composition">
+            </figure>
+        </section>
+        <section>
+            <div>
+                <h3>Destiny EP (2020)</h3>
+                <p>4-track EP, digital</p>
+                <p>Released by London-based label <a href="https://midnight-people.bandcamp.com">Midnight People</a></p>
+                <p><a href="https://midnight-people.bandcamp.com/album/destiny-ep">Destiny EP on Bandcamp</a></p>
+            </div>
+            <figure>
+                <iframe style="border: 0; height: 274px;" src="https://bandcamp.com/EmbeddedPlayer/album=3427035544/size=large/bgcol=333333/linkcol=0f91ff/artwork=small/transparent=true/" seamless><a href="https://midnight-people.bandcamp.com/album/destiny-ep">Destiny EP by Vitling</a></iframe>
+            </figure>
+        </section>
+        <section>
+            <div>
+                <h3>Acid Rain (2020)</h3>
+                <p>Infinite random audiovisual composition, Typescript / Canvas / WebAudio</p>
+                <p><a href="toys/acid_rain">Play</a> (Sorry, no Safari support - they haven't implemented key parts of the Web Audio API yet)</p>
+            </div>
+            <figure>
+                <img src="images/acid_rain.jpg">
+            </figure>
+        </section>
+        <section>
+            <div>
+                <h3>Triple Saw (2020)</h3>
+                <p>Infinite generative pattern-based audiovisual composition, js / Canvas / WebAudio</p>
+                <p><a href="toys/triple_saw">Play</a> <br>(Chrome or Opera recommended, uses new web technology which isn't in all browsers yet)</p>
+            </div>
+            <figure>
+                <img src="images/triple_saw.jpg" alt="Screenshot of the Triple Saw algorithmic composition in action">
+            </figure>
+        </section>
+        <section>
+            <div>
+                <h3>The Spirits In This Forest Are Older Than Your Gods (2020)</h3>
+                <p>7-track album, digital</p>
+                <p>Part of the "Bow Church" music project</p>
+                <p><a href="https://bowchurch.bandcamp.com/album/the-spirits-in-this-forest-are-older-than-your-gods">Bandcamp</a> || <a href="https://open.spotify.com/album/6HKVY0ZJ9Lz9fqElopwif7?si=rSjPYc0vS-Gwa2cN7Xovjg">Spotify</a></p>
+                <p><a href="https://www.youtube.com/watch?v=UH9T8WzNDVE">Video (for Hunt) on YouTube</a></p>
+            </div>
+            <figure>
+                <iframe style="border: 0; height: 274px;" src="https://bandcamp.com/EmbeddedPlayer/album=2318846024/size=large/bgcol=333333/linkcol=0f91ff/artwork=small/transparent=true/" seamless><a href="https://bowchurch.bandcamp.com/album/the-spirits-in-this-forest-are-older-than-your-gods">The Spirits In This Forest Are Older Than Your Gods by Bow Church</a></iframe>
+            </figure>
+        </section>
+        <section>
+            <div>
+                <h3>Humanoids (2020)</h3>
+                <p>3d animation, Blender + Makehuman</p>
+                <p>Created originally as club visuals for <a href="http://www.sundayclub.club">Sunday Club</a>, exhibited again as part of <a href="https://www.arte.tv/de/videos/096844-030-A/united-we-stream-30-brenn-x-kake/">United We Stream #30: BRENN. X Kake</a></p>
+            </div>
+            <figure>
+                <iframe width="500" height="315" src="https://www.youtube-nocookie.com/embed/QjZQEeBmrpo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </figure>
+        </section>
+        <section>
+            <div>
+                <h3>Barcode (2019)</h3>
+                <p>Interactive audiovisual composition, js / Canvas / WebAudio</p>
+                <p><a href="toys/barcode/">Play</a></p>
+            </div>
+            <figure>
+                <img src="images/barcode.png" alt="Screenshot of the Barcode algorithmic composition">
+            </figure>
+        </section>
+        <section>
+            <div>
+                <h3>Cosmic Cosmetic Microcosm (2019)</h3>
+                <p>2-track single, digital</p>
+                <ol>
+                    <li>Cosmic Cosmetic Microcosm [5:59]</li>
+                    <li>Not Going Out [8:06]</li>
+                </ol>
+                <p><a href="http://vitling.bandcamp.com">Bandcamp</a> //
+                <a href="https://open.spotify.com/album/1pn9ZMLN8xNbZ34AkWGmVh?si=w_IHYmjgTtG16rNUuJ2Fbg">Spotify</a> //
+                <a href="https://soundcloud.com/vitling/sets/cosmic-cosmetic-microcosm">SoundCloud</a></p>
+            </div>
+            <figure>
+                <iframe style="border: 0; height: 274px;" src="https://bandcamp.com/EmbeddedPlayer/album=3127856168/size=large/bgcol=333333/linkcol=0f91ff/artwork=small/transparent=true/" seamless><a href="https://vitling.bandcamp.com/album/cosmic-cosmetic-microcosm">Cosmic Cosmetic Microcosm by Vitling</a></iframe>
+            </figure>
+        </section>
+        <section>
+            <div>
+                <h3>
+                    Dimensional Transport Apparatus (2019) w. Leon Worden
+                </h3>
+                <p>Exhibited as in interactive installation during Sunday Club on 06.10.2019.
+                    Visitors were invited to attempt to navigate to an alternate dimension using an control surface comprised of dials and faders as the interface.
+                    Patterns projected on to the triangular display reflected the visitor's journey.
+                    This was a collaboration with Leon Worden, who designed and built the physical structures to present the work in installation form.
+                </p>
+            </div>
+            <figure>
+                <img src="images/dimension.jpg">
+            </figure>
+        </section>
+
+        <section>
+            <div>
+                <h3>We Meet At The Singularity (2019) w. Reinartz</h3>
+                <p>Exhibited as an interactive installation at "Through Whose Eyes" exhibition at KAKE, Berlin</p>
+                <p>Algorithmic score and visuals by Vitling, sound design by <a href="https://soundcloud.com/rreinartz">Reinartz</a></p>
+                <p>
+                    Singularity:
+
+                    A point at which a given mathematical object is not defined or not "well-behaved", for example infinite or not differentiable.
+
+                    A region in spacetime in which tidal gravitational forces become infinite.
+
+                    A weather phenomenon likely to occur with reasonable regularity around a specific approximate calendar date, outside of more general seasonal weather patterns.
+
+                    A union of consciousness reported to be observed within an “ego death” experience.
+
+                    A hypothetical moment in time when any physically conceivable level of technological advancement is attained instantaneously.
+                </p>
+            </div>
+            <figure>
+                <video controls preload="none">
+                    <source src="videos/singularity.mov">
+                </video>
+            </figure>
+        </section>
+        <section>
+            <div>
+                <h3>Dusk (2018)</h3>
+                <p>3-track EP, digital</p>
+                <ol>
+                    <li>Civil Dusk [3:28]</li>
+                    <li>Nautical Dusk [3:28]</li>
+                    <li>Astronomical Dusk [2:50]</li>
+                </ol>
+                <p><a href="https://vitling.bandcamp.com/album/dusk">Bandcamp</a> //
+                    <a href="https://open.spotify.com/album/0G0U7r1qYmIEtf7isLcSkU?si=LNW7KMU8SmOIoXjXwlRGRQ">Spotify</a> //
+                    <a href="https://soundcloud.com/vitling/sets/dusk">SoundCloud</a></p>
+            </div>
+            <figure>
+                <iframe style="border: 0; height: 274px;" src="https://bandcamp.com/EmbeddedPlayer/album=939461444/size=large/bgcol=333333/linkcol=0f91ff/artwork=small/transparent=true/" seamless><a href="https://vitling.bandcamp.com/album/dusk">Dusk by Vitling</a></iframe>
+            </figure>
+        </section>
+    </main> -->
+</body>
+</html>
